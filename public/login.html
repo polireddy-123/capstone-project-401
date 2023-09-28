@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <body>
+            <h1>Login Page</h1>
+            <form action="/loginsubmit" method="post"> 
+                
+                
+              
+              
+                Email:
+                <input type = "text" placeholder="ENTER YOUR EMAIL"name ="Email" /> <br/>
+                Password:
+                <input type = "password" placeholder="ENTER YOUR PASSWORD"name ="Password" /> <br/>
+                <input type = "submit" />
+            </form>
+        </body>
+    </head>
+</html>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #ee9ca7;  
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
+background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(224, 107, 178, 0.5);
+            
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+</style>

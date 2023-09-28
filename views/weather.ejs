@@ -1,0 +1,156 @@
+<html>
+  <style>
+    
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url(https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-2381.jpg?size=626&ext=jpg&ga=GA1.2.2067876312.1694536614&semt=ais) no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      border-color: lightgreen;
+    }
+
+    
+    .weather-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    
+    .loc {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    
+    .loc1 {
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    
+    .loc1::before {
+      content: " : ";
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      .weather-container {
+        padding: 30px;
+      }
+    }
+
+    #rain {
+      border: 2px solid black;
+      border-radius: 10px;
+      width: 320px;
+      height: 290px;
+      position: relative;
+      top: 50px;
+      left: 390px;
+    }
+
+    #climate {
+      position: relative;
+    top: -100px;
+    width: 100px;
+    height: auto;
+    left: 161px;
+}
+#climate1 {
+  position: relative;
+    top: 93px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: 459px;
+}
+#climate3 {
+  position: relative;
+    top: -298px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: 639px;
+}
+#climate2 {
+  position: relative;
+    top: -100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: 280px;
+}
+#climate4 {
+  position: relative;
+    top: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: -361px;
+}
+#climate5 {
+  position: relative;
+    top: -155px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: -176px;
+}
+#climate6 {
+  position: relative;
+    top: -348px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 148px;
+    height: 190px;
+    left: 5px;
+}
+
+    
+  </style>
+  <div id="rain">
+    <h3 class="loc">NAME:<i class="loc1"> <%= Name %></i></h3>
+    <h3 class="loc">TEMPERATURE:<i class="loc1"> <%= Temperature %></i></h3>
+    <h3 class="loc">SEA_LEVEL:<i class="loc1"> <%= Sea_Level %></i></h3>
+    <h3 class="loc">COUNTRY:<i class="loc1"> <%= Country %></i></h3>
+    <h3 class="loc">SPEED:<i class="loc1"> <%= Speed %></i></h3>
+    <img src="https://cdn-icons-png.flaticon.com/128/4064/4064269.png" id="climate">
+
+  </div>
+  <div id="climate1">
+    <h3><center>Today</center></h3>
+  <img src="https://cdn-icons-png.flaticon.com/128/4064/4064269.png"  >
+</div>
+<div id="climate2">
+  <h3><center>Yesterday</center></h3>
+<img src="https://cdn-icons-png.flaticon.com/128/4724/4724094.png"  >
+</div>
+<div id="climate3">
+  <h3><center>Tomorrow</center></h3>
+<img src="https://cdn-icons-png.flaticon.com/128/1163/1163625.png"  >
+<div id="climate4">
+  <h3><center>23,Sat</center></h3>
+<img src="https://cdn-icons-png.flaticon.com/128/4834/4834735.png"  >
+</div>
+<div id="climate5">
+  <h3><center>24,Sun</center></h3>
+<img src="https://cdn-icons-png.flaticon.com/128/9361/9361662.png"  >
+</div>
+<div id="climate6">
+  <h3><center>25,Mon</center></h3>
+<img src="https://cdn-icons-png.flaticon.com/128/1146/1146856.png"  >
+</div>
+</div>
+</html>
